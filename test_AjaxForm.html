@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta lang="zh">
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="./test_AjaxForm.css">
+<html>
+<head>
+	<title>测试AjaxForm和AjaxSubmit</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
+	<script src="test_AjaxForm.js"></script>
+</head>
+<body>
+	<form action="test.html" id="test_form" method="post" enctype="multipart/form-data" charset="utf-8">	
+		<label for="name"><span>文件名</span></label>
+		<input id="name" name="name" type="text"/>
+		<label for="file_path"><span>文件</span></label>
+		<input type="file" name="file_path" id="file_path"/>
+		<input type="submit" id="btn_submit" value="提交" />
+	</form>
+	<div id="progress">
+		<div class="bar"></div>
+		<div class="percent"></div>
+		<span id="status">没有文件</span>
+	</div>
+</body>
+</html>
